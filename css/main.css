@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:hover,
+*:focus,
+*:active {
+    outline: 0;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    color: #9a9da2;
+    background: #323232;
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.profile {
+    padding: 57px 50px 15px 50px;
+}
+
+.footer-social {
+    padding: 30px 0;
+    background: #323232;
+}
+
+.footer-social .social li a .fab {
+    color: #232323;
+    -webkit-transition: -webkit-transition, color 0.25s linear 0s;
+    -moz-transition: -moz-transition, color 0.25s linear 0s;
+    transition: transition, color 0.25s linear 0s;
+}
+
+.footer-social .social li a:hover .fab {
+    color: #6e6e6e;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding-bottom: 30px;
+    }
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.social li a {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    -webkit-transition: -webkit-transition, background-color 0.25s linear 0s;
+    -moz-transition: -moz-transition, background-color 0.25s linear 0s;
+    transition: transition, background-color 0.25s linear 0s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.social li a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.social li a, .social li a .fab {
+    line-height: 45;
+}
+
+.social li a .fab {
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .social li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .social li a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social li a, .social li a .fab {
+        line-height: 35px;
+    }
+
+    .social li a .fab {
+        font-size: 17px;
+    }
+}
