@@ -73,6 +73,7 @@ h1 {
 .footer-social {
     padding: 30px 0;
     background: #323232;
+
 }
 
 .footer-social .social li a .fab {
@@ -155,4 +156,106 @@ h1 {
     .social li a .fab {
         font-size: 17px;
     }
+}
+
+
+/**** MAIN CONTENT ****/
+img {
+    width: 100%;
+    height: auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: top; 
+    min-height: auto;
+}
+.header-content {
+    align-items: top;
+}
+.homework-logo img {
+    width: 100%;
+    height: auto;
+}
+.task img {
+    display: flex;
+    flex-direction: column;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    background-color: #16a085;
+}
+.avatar {
+    border-radius: 50%;
+}
+
+
+/**** NAVBAR ****/
+.navbar {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+    position: relative;
+}
+.nav-menu a {
+    color: #16a085;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #16a085;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+/**** END NAVBAR ****/
+
+
+
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile img {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+.homework, .profile {
+    display: flex;
+    
+
+}
+.left-box {
+    display: flex;
+    flex-basis: 400;
+}
+.left-box img {
+    max-height: 100%;
 }
