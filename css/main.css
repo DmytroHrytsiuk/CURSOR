@@ -1,7 +1,7 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
     font-family: inherit;
-    font-size: 100%;
+    /*font-size: 100%;*/
     font-style: inherit;
     font-weight: inherit;
     margin: 0;
@@ -161,8 +161,7 @@ h1 {
 
 /**** MAIN CONTENT ****/
 img {
-    width: 100%;
-    height: auto;
+    
 }
 .wrapper {
     display: flex;
@@ -180,6 +179,8 @@ img {
 .task img {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 .profile {
     display: flex;
@@ -231,10 +232,6 @@ img {
     color: black;
 }
 /**** END NAVBAR ****/
-
-
-
-
 /* Column container */
 .row {  
     display: flex;
@@ -247,10 +244,9 @@ img {
   width: auto;
   height: auto;
 }
-.homework, .profile {
+.homework {
     display: flex;
-    
-
+    flex-direction: column;
 }
 .left-box {
     display: flex;
@@ -258,4 +254,8 @@ img {
 }
 .left-box img {
     max-height: 100%;
+}
+.task h2 {
+    
+    font-size: 24px;
 }

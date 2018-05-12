@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: grid;
+	grid-template-areas: "header header header"
+						 "navbar navbar navbar"
+						 "main aside-c aside-r"
+						 "footer footer footer";
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: 60px 50px 1fr 100px;
+	min-height: 150vh;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+	font-family: Roboto;
+	color: white;
+}
+												/**** HEADER ****/
+.header {
+	display: flex;
+	justify-content: space-between;
+	grid-area: header;	
+}
+.logo {
+	display: grid;
+	height: 60px;
+	width: 250px;
+	background-color: #b1b1b1;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner {
+	display: grid;
+	height: 60px;
+	width: 50%;
+	background-color: #b1b1b1;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar {
+	display: grid;
+	grid-area: navbar;
+	background: #b1b1b1;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+												/**** HEADER END****/
+
+												/**** MAIN ****/
+.main {
+	display: grid;
+	grid-area: main;
+	grid-template-rows: 25% 30% 1fr;
+	grid-row-gap: 10px;
+}
+.main div {
+	display: grid;
+	background-color: #b1b1b1;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.aside-center {
+	display: grid;
+	grid-area: aside-c;
+	/*background: #65da73;*/
+	grid-template-rows: 30% 1fr;
+	grid-gap: 10px;
+}
+.aside-center div {
+	display: grid;
+	background-color: #b1b1b1;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.aside-right {
+	display: grid;
+	grid-area: aside-r;
+	grid-template-rows: 20% 45% 1fr;
+	grid-gap: 10px;
+}
+.aside-right div {
+	display: grid;
+	background-color: #b1b1b1;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+												/**** MAIN END ****/
+
+												/**** FOOTER ****/
+.footer {
+	display: grid;
+	grid-area: footer;
+	background: #b1b1b1;
+	justify-content: center;
+    align-items: center;
+}
+												/**** FOOTER END ****/
+
+												/**** MEDIA ****/
+@media screen and (max-width: 600px){
+	.container {
+		grid-template-areas: "header"
+							 "navbar"
+						 	 "main"
+						 	 "aside-c"
+						 	 "aside-r"
+						 	 "footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 60px 50px 3fr 2fr 3fr 100px;
+	}
+	.logo {
+	width: 150px;
+	}
+}
